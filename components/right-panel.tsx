@@ -34,9 +34,9 @@ const RightPanel = () => {
           <button
             className={`${
               activeSection === "overview"
-                ? "bg-gradient-to-r from-red-600 to-indigo-600"
+                ? "bg-gradient-to-r from-red-600 to-indigo-600 text-white"
                 : "bg-gray-300 text-black/75"
-            } px-4 h-20 w-20 py-3 font-semibold text-white flex flex-col items-center rounded-xl`}
+            } px-4 h-20 w-20 py-3 font-semibold flex flex-col items-center rounded-xl`}
             onClick={() => setActiveSection("overview")}
           >
             <GrOverview className="h-11 w-11" />
@@ -45,9 +45,9 @@ const RightPanel = () => {
           <button
             className={`${
               activeSection === "experience"
-                ? "bg-gradient-to-r from-red-600 to-indigo-600"
+                ? "bg-gradient-to-r from-red-600 to-indigo-600 text-white"
                 : "bg-gray-300 text-black/75"
-            } px-4 h-20 w-20 py-3 font-semibold text-white flex flex-col items-center rounded-xl`}
+            } px-4 h-20 w-20 py-3 font-semibold flex flex-col items-center rounded-xl`}
             onClick={() => setActiveSection("experience")}
           >
             <PiBrain className="h-11 w-11 " />
@@ -56,9 +56,9 @@ const RightPanel = () => {
           <button
             className={`${
               activeSection === "education"
-                ? "bg-gradient-to-r from-red-600 to-indigo-600"
+                ? "bg-gradient-to-r from-red-600 to-indigo-600 text-white"
                 : "bg-gray-300 text-black/75"
-            } px-4 h-20 w-20 py-3 font-semibold text-white flex flex-col items-center rounded-xl`}
+            } px-4 h-20 w-20 py-3 font-semibold flex flex-col items-center rounded-xl`}
             onClick={() => setActiveSection("education")}
           >
             <PiGraduationCapLight className="h-11 w-11 " />
@@ -67,9 +67,9 @@ const RightPanel = () => {
           <button
             className={`${
               activeSection === "blog"
-                ? "bg-gradient-to-r from-red-600 to-indigo-600"
+                ? "bg-gradient-to-r from-red-600 to-indigo-600 text-white"
                 : "bg-gray-300 text-black/75"
-            } px-4 h-20 w-20 py-3 font-semibold text-white flex flex-col items-center rounded-xl`}
+            } px-4 h-20 w-20 py-3 font-semibold flex flex-col items-center rounded-xl`}
             onClick={() => setActiveSection("blog")}
           >
             <PiChat className="h-11 w-11 " />
@@ -78,9 +78,9 @@ const RightPanel = () => {
           <button
             className={`${
               activeSection === "refs"
-                ? "bg-gradient-to-r from-red-600 to-indigo-600"
+                ? "bg-gradient-to-r from-red-600 to-indigo-600 text-white"
                 : "bg-gray-300 text-black/75"
-            } px-4 h-20 w-20 py-3 font-semibold text-white flex flex-col items-center rounded-xl`}
+            } px-4 h-20 w-20 py-3 font-semibold flex flex-col items-center rounded-xl`}
             onClick={() => setActiveSection("refs")}
           >
             <PiStar className="h-11 w-11 " />
@@ -89,12 +89,12 @@ const RightPanel = () => {
           <button
             className={`${
               activeSection === "socials"
-                ? "bg-gradient-to-r from-red-600 to-indigo-600"
+                ? "bg-gradient-to-r from-red-600 to-indigo-600 text-white"
                 : "bg-gray-300 text-black/75"
-            } px-4 h-20 w-20 py-3 font-semibold text-white flex flex-col items-center rounded-xl`}
+            } px-4 h-20 w-20 py-3 font-semibold flex flex-col items-center rounded-xl`}
             onClick={() => setActiveSection("socials")}
           >
-                        <PiHeart className="h-11 w-11 " />
+            <PiHeart className="h-11 w-11 " />
             <span className="text-sm mt-1">Socials</span>
           </button>
           {/* Add similar onClick handlers for other buttons */}

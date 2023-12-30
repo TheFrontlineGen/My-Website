@@ -1,12 +1,14 @@
 {
-    "twitter": {
-      "handle": "thefrontlinegen"
-    },
-    "github": {
-        "username": "thefrontlinegen"
-      },
-      "twitch": {
-        "username": "thefrontlinegenesis"
-      }
+  "twitter": {
+    "handle": "thefrontlinegen"
+  },
+  "github": {
+    "username": "thefrontlinegen"
+  },
+  "twitch": {
+    "username": "thefrontlinegenesis"
+  },
+  "gravatar": {
+    "username": "thefrontlinegen"
   }
-  
+}
