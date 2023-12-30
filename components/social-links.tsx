@@ -1,5 +1,5 @@
 import React from "react";
-import { FaXTwitter, FaGithub, FaTwitch } from "react-icons/fa6";
+import { FaXTwitter, FaGithub, FaTwitch, FaMastodon } from "react-icons/fa6";
 import Link from "next/link";
 import socialMediaConfig from "../config.json";
 import { SiGravatar } from "react-icons/si";
@@ -25,6 +25,11 @@ const ButtonGroup = () => {
        {socialMediaConfig.gravatar && socialMediaConfig.gravatar.username && (
         <Link href={`https://gravatar.com/${socialMediaConfig.gravatar.username}`}>
           <SiGravatar />
+        </Link>
+      )}
+         {socialMediaConfig.mastodon && socialMediaConfig.mastodon.username && socialMediaConfig.mastodon.domain && (
+        <Link href={`https://${socialMediaConfig.mastodon.domain}/@${socialMediaConfig.mastodon.username}`}>
+          <FaMastodon />
         </Link>
       )}
     </div>

@@ -1,4 +1,14 @@
 {
+  "profile": {
+    "fullname": "Marshall Woodhouse",
+    "jobtitle": "Web Developer",
+    "profile": "/logo.jpg",
+    "birthyear": 2000,
+    "birthmonth": 4,
+    "birthday": 15,
+    "country": "UK",
+    "region": "Scotland"
+  },
   "twitter": {
     "handle": "thefrontlinegen"
   },
@@ -10,5 +20,10 @@
   },
   "gravatar": {
     "username": "thefrontlinegen"
+  },
+  "mastodon": {
+    "username": "frontlinegen", 
+    "domain": "techhub.social"
   }
+
 }
