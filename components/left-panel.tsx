@@ -48,6 +48,13 @@ const LeftPanel = () => {
           )}
           <ButtonGroup />
           <div className="flex flex-col-reverse text-left py-1 divide-gray-400 mx-4 mb-4 text-black bg-gray-300 rounded-2xl px-3 divide-y divide-y-reverse mt-5">
+          {socialMediaConfig.profile && socialMediaConfig.profile.number && (
+              <Link
+                href={
+                  "phone:" +
+                  (socialMediaConfig.profile.number)
+                }
+              >
             <div className="flex items-center space-x-3 py-2">
               <div className="bg-gradient-to-r from-red-600 to-indigo-600  h-11 flex justify-center w-11 drop-shadow-2xl px-2 py-2 font-semibold text-white items-center space-x-1 rounded-xl">
                 <FaPhoneVolume className="h-5 w-5" />
@@ -59,7 +66,15 @@ const LeftPanel = () => {
                 </span>
               </div>
             </div>
-
+            </Link>
+            )}
+            {socialMediaConfig.profile && socialMediaConfig.profile.email && (
+              <Link
+              href={
+                "mailto:" +
+                (socialMediaConfig.profile.email)
+              }
+            >
             <div className="flex items-center space-x-3 py-2">
               <div className="bg-gradient-to-r from-red-600 to-indigo-600  h-11 flex justify-center w-11 drop-shadow-2xl px-2 py-2 font-semibold text-white items-center space-x-1 rounded-xl">
                 <MdEmail className="h-5 w-5" />
@@ -67,10 +82,15 @@ const LeftPanel = () => {
               <div className="flex flex-col m-0 p-0 py-1">
                 <span className="text-sm font-semibold mb-0 pb-0">Email</span>
                 <span className="font-medium text-lg mt-0 pb-0">
-                  hi@thefrontlinegen.com
+                {socialMediaConfig.profile &&
+                        socialMediaConfig.profile.email && (
+                          <>{socialMediaConfig.profile.email}</>
+                        )}
                 </span>
               </div>
             </div>
+            </Link>
+            )}
             {socialMediaConfig.profile && socialMediaConfig.profile.country && (
               <Link
                 href={

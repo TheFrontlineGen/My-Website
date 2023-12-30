@@ -6,7 +6,7 @@ import { FaPhoneVolume } from "react-icons/fa6";
 
 const Home: NextPage = () => {
   return (
-    <div className="bg-black w-screen h-screen">
+    <div className=" bg-black w-screen h-screen">
       <div className="flex justify-center pt-32">
         {/* Left column */}
         <LeftPanel />

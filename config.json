@@ -7,7 +7,9 @@
     "birthmonth": 4,
     "birthday": 15,
     "country": "UK",
-    "region": "Scotland"
+    "region": "Scotland",
+    "email": "thefrontlinegen@email.com",
+    "number": "+447488239447"
   },
   "twitter": {
     "handle": "thefrontlinegen"
