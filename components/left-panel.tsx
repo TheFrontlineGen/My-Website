@@ -27,7 +27,7 @@ const LeftPanel = () => {
   return (
     <div className="lg:w-[22%] w-full p-4 pt-0">
       {/* Content for the left column */}
-      <div className="bg-gray-200 rounded-3xl p-0 py-4 h-auto flex justify-center relative">
+      <div className="bg-gray-200 rounded-3xl p-0 py-4 pb-0 h-auto flex justify-center relative">
         <Image
           src="/logo.jpg"
           height={120}
@@ -51,7 +51,7 @@ const LeftPanel = () => {
           {socialMediaConfig.profile && socialMediaConfig.profile.number && (
               <Link
                 href={
-                  "phone:" +
+                  "tel:" +
                   (socialMediaConfig.profile.number)
                 }
               >

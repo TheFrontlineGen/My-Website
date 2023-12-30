@@ -1,8 +1,13 @@
 import React, { useState } from "react";
-import { GrOverview } from "react-icons/gr";
-import { PiBrain } from "react-icons/pi";
-import { PiGraduationCapLight } from "react-icons/pi";
-import { PiChat, PiStar, PiHeart } from "react-icons/pi";
+import {
+  PiChat,
+  PiStar,
+  PiHeart,
+  PiHouse,
+  PiGraduationCapLight,
+  PiBrain,
+} from "react-icons/pi";
+import socialMediaConfig from "../config.json";
 
 const RightPanel = () => {
   const [activeSection, setActiveSection] = useState("overview");
@@ -10,7 +15,25 @@ const RightPanel = () => {
   const renderContent = () => {
     switch (activeSection) {
       case "overview":
-        return <p>Overview Content</p>;
+        return (
+          <>
+            <h1 className="text-3xl font-bold">About Me</h1>
+            <p className="mt-2">
+              {socialMediaConfig.profile && socialMediaConfig.profile.about && (
+                <>{socialMediaConfig.profile.about}</>
+              )}
+            </p>
+            {/* <h1 className="text-3xl font-bold mt-5">What I Do</h1>
+            <div className="mt-2 flex flex-col space-x-2">
+              <div className="w-[45%] inline-flex col-span-1 bg-gradient-to-r from-red-600 to-indigo-600 p-3 rounded-3xl">
+                asd
+              </div>
+              <div className="w-[45%] inline-flex col-span-1 bg-gradient-to-r from-red-600 to-indigo-600 p-3 rounded-3xl">
+                asd
+              </div>
+            </div> */}
+          </>
+        );
       case "experience":
         return <p>Experience Content</p>;
       case "education":
@@ -39,7 +62,7 @@ const RightPanel = () => {
             } px-4 h-20 w-20 py-3 font-semibold flex flex-col items-center rounded-xl`}
             onClick={() => setActiveSection("overview")}
           >
-            <GrOverview className="h-11 w-11" />
+            <PiHouse className="h-11 w-11" />
             <span className="text-sm mt-1">Overview</span>
           </button>
           <button
@@ -102,7 +125,9 @@ const RightPanel = () => {
       </div>
 
       {/* Second element on the right */}
-      <div className="bg-gray-200 rounded-3xl p-4 h-32">{renderContent()}</div>
+      <div className="bg-gray-200 rounded-3xl p-5 pr-20 h-auto">
+        {renderContent()}
+      </div>
     </div>
   );
 };
